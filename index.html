@@ -45,8 +45,9 @@ support@yourcompany.com</a>.
             lgt_url: 'https://taras.leeloo.ai/lead-gen',
             short_url: 'https://taras.leeloo.ai'};
         var js = document.createElement('script');
-        js.src = 'https://taras.leeloo.ai/init.js';
-        js.async = true;
+        js.setAttribute('src', 'https://taras.leeloo.ai/init.js');
+        js.setAttribute('async', true); 
+        js.setAttribute('type', "text/javascript"); 
         document.getElementsByTagName('head')[0].appendChild(js);
     }; LEELOO();
     </script>
