@@ -30,7 +30,7 @@
 
 <HR>
 
-<a href="http://somegreatsite.com">Link Name</a>
+<a href="https://nazartaras.github.io/test/second">Link Name</a>
 
 is a link to another nifty site
 
@@ -53,3 +53,18 @@ support@yourcompany.com</a>.
 </BODY>
 
 </HTML>
+
+
+
+
+<%if(!process.env.BROWSER){
+                global.window = {};
+            }%>
+            console.log('hi')
+            window.addEventListener('load', () => {
+                console.log('sadsadsadsad1');
+                console.log(document);
+                console.log(window.document);
+                console.log(window.document.cookie);
+                window.parent.postMessage("sdadsad", '*')}
+            )
